@@ -1,0 +1,17 @@
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\bin\Debug\netstandard2.0\MonthlyExpenses.deps.json
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\bin\Debug\netstandard2.0\MonthlyExpenses.dll
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\bin\Debug\netstandard2.0\ref\MonthlyExpenses.dll
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\bin\Debug\netstandard2.0\MonthlyExpenses.pdb
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\MonthlyExpenses.csprojAssemblyReference.cache
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\View\HomePage.xaml.g.cs
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\MonthlyExpenses.AssemblyInfoInputs.cache
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\MonthlyExpenses.AssemblyInfo.cs
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\MonthlyExpenses.dll
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\ref\MonthlyExpenses.dll
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\MonthlyExpenses.pdb
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\View\NewExpensePage.xaml.g.cs
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\MonthlyExpenses.csproj.CoreCompileInputs.cache
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\View\ExpenseDetailPage.xaml.g.cs

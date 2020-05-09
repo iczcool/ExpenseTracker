@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "4F2Etq8q6fak6og1UvcOZ5rbXtU+yCngAw35jGIFeSObjema78g/WUzMRSi350Yy2JyL+4RmA3t2axL5cd+rLQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CCUK\\Desktop\\Xamarin projects\\MonthlyExpenses\\MonthlyExpenses\\MonthlyExpenses.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\CCUK\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "C:\\Users\\CCUK\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "C:\\Users\\CCUK\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\CCUK\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512"
+  ],
+  "logs": []
+}

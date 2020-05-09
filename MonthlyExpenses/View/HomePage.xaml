@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MonthlyExpenses.View.HomePage"
+             Title="Monthly Expenses"  
+             NavigationPage.HasBackButton="False">
+
+    <ContentPage.Content>
+
+        <!--<StackLayout Orientation="Vertical">
+            <Grid x:Name="headers"></Grid>
+            <ScrollView>
+                <Grid>
+                    <ListView>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </ScrollView>
+        </StackLayout>-->
+
+
+        <StackLayout Orientation="Vertical">
+            <Grid Margin="0,0,0,60" BackgroundColor="#0074D9" HeightRequest="500">
+                <StackLayout VerticalOptions="End">
+                    <!-- Test -->
+                    <Label Text="Number of Expenses" HorizontalTextAlignment="Center" TextColor="#fff"/>
+                    <Label x:Name="expenseCount" Text="--" TextColor="#fff" HorizontalTextAlignment="Center"/>
+                    <!-- End Test -->
+                        <Label Text="You Owe" TextColor="#ffffff" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Label x:Name="expenseTotal" Text="--" TextColor="#ffffff" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Label Text="this month" TextColor="#ffffff" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Button Text="+" 
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        BackgroundColor="#618685" 
+                        TextColor="#ffffff" 
+                        FontSize="40" 
+                        Padding="0,0,0,0"
+                        CornerRadius="50"
+                        x:Name="addExpense"
+                        Clicked="addexpensebtn_Clicked"
+                        HorizontalOptions="End"
+                        Margin="0,0,20,20"/>
+                </StackLayout>
+            </Grid>
+            <ListView x:Name="expenseListView" Margin="20,0,20,0">
+
+                <ListView.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="ID" HorizontalOptions="Fill" Grid.Column="0" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="1"/>
+                        <Label Text="Due Date" HorizontalOptions="Fill" Grid.Column="1" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="1"/>
+                        <Label Text="Expense" HorizontalOptions="Fill" Grid.Column="2" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="1"/>
+                        <Label Text="Amount" HorizontalOptions="Fill" Grid.Column="3" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="1"/>
+                        <Label Text="Detail" HorizontalOptions="Fill" Grid.Column="4" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="1"/>
+                        
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Id}" HorizontalOptions="Fill" Grid.Column="0" HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="{Binding DueDate}" HorizontalOptions="Fill" Grid.Column="1" HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Fill" Grid.Column="2" HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="£,{Binding Amount}" HorizontalOptions="Fill" Grid.Column="3" HorizontalTextAlignment="Center" Margin="1"/>
+                                <Button x:Name="detailBtn" Text="::" Grid.Column="4" BackgroundColor="Black" TextColor="White" Clicked="detailBtn_Clicked"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

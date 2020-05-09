@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MonthlyExpenses.View.ExpenseDetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="0,50,0,0">
+                <Label Text="Expense Detail" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Margin="0,100,0,0" HorizontalOptions="CenterAndExpand">
+                <Label x:Name="name" Text="--" FontSize="Title"/>
+                <Label Margin="10,0,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Amount:  " FontAttributes="Bold"/>
+                                <Span x:Name="amount" Text="--"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Margin="10,0,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Due Date:  " FontAttributes="Bold"/>
+                                <Span x:Name="duedate" Text="--"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Margin="10,0,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Reciever:  " FontAttributes="Bold"/>
+                                <Span x:Name="company" Text="--"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Margin="10,0,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Payment Method:  " FontAttributes="Bold"/>
+                                <Span x:Name="paymethod" Text="--"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <StackLayout Margin="100,100,100,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="edit" Text="Edit" Grid.Row="0" Grid.Column="0" Clicked="edit_Clicked"/>
+                    <Button x:Name="delete" Text="Delete" Grid.Row="0" Grid.Column="1" Clicked="delete_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
