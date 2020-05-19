@@ -491,3 +491,10 @@ C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\o
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\assets\System.Runtime.Extensions.dll
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\assets\System.Threading.dll
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\assets\System.Threading.Tasks.dll
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CarouselViewRenderer_CarouselViewOnScrollListener.java
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CarouselViewRenderer_CarouselViewwOnGlobalLayoutListener.java
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsVideoView.java
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\MediaElementRenderer.java
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\NongreedySnapHelper_InitialScrollListener.java
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\RadioButtonRenderer.java
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ViewCellRenderer_ViewCellContainer_TapGestureListener.java

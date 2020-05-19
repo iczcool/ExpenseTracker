@@ -1,4 +1,5 @@
 ﻿using MonthlyExpenses.Model;
+using MonthlyExpenses.ViewModel;
 using SQLite;
 using System;
 using System.Windows.Input;
@@ -13,6 +14,7 @@ namespace MonthlyExpenses.View
         public HomePage()
         {
             InitializeComponent();
+            BindingContext = new HomePageViewModel();
         }
 
         protected override void OnAppearing()
@@ -24,9 +26,9 @@ namespace MonthlyExpenses.View
             var expenses = conn.Table<Expense>().ToList();
             conn.Close();
 
-            string TotalExpenses()
+            double TotalExpenses()
             {
-                string total = null;
+                double total = 0;
                 foreach (var item in expenses)
                 {                 
                     total += item.Amount;
@@ -41,7 +43,7 @@ namespace MonthlyExpenses.View
             }
 
             //returns total amount of expenses
-            expenseTotal.Text = TotalExpenses();
+            expenseTotal.Text = TotalExpenses().ToString();
             //returns total number of expenses saved
             expenseCount.Text = NumberOfExpenses();
             expenseListView.ItemsSource = expenses;
@@ -52,10 +54,14 @@ namespace MonthlyExpenses.View
         {
             Navigation.PushAsync(new NewExpensePage());
         }
-
         private void detailBtn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ExpenseDetailPage());
+            int myId;
+            var buttonClickedHandler = (Button)sender;
+            Grid parentGrid = (Grid)buttonClickedHandler.Parent;
+            Label idLabel = (Label)parentGrid.Children[0];
+            myId = int.Parse(idLabel.Text);
+            Navigation.PushAsync(new ExpenseDetailPage(myId));
         }
     }
 }

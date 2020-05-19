@@ -14,8 +14,10 @@ namespace MonthlyExpenses.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ExpenseDetailPage : ContentPage
     {
-        public ExpenseDetailPage()
+        int _id;
+        public ExpenseDetailPage(int id)
         {
+            _id = id;
             InitializeComponent();
 
             SQLiteConnection conn = new SQLiteConnection(App.DbLocation);
@@ -24,7 +26,7 @@ namespace MonthlyExpenses.View
             conn.Close();
 
             var exp = (from e in expenses
-                       where e.Id == 2
+                       where e.Id == _id
                        select e).FirstOrDefault();
 
             Expense myexp = new Expense();
@@ -35,8 +37,8 @@ namespace MonthlyExpenses.View
             myexp.PaymentMethod = exp.PaymentMethod;
 
             name.Text = myexp.Name;
-            amount.Text = myexp.Amount;
-            duedate.Text = myexp.DueDate;
+            amount.Text = myexp.Amount.ToString();
+            duedate.Text = myexp.DueDate.ToString();
             company.Text = myexp.Company;
             paymethod.Text = myexp.PaymentMethod;
         }
@@ -48,7 +50,7 @@ namespace MonthlyExpenses.View
 
         private void delete_Clicked(object sender, EventArgs e)
         {
-
+            DisplayAlert("ID", _id.ToString(), "Ok");
         }
     }
 }

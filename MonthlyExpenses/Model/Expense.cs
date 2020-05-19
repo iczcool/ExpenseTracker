@@ -12,8 +12,8 @@ namespace MonthlyExpenses.Model
         [PrimaryKey,AutoIncrement]
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Amount { get; set; }
-        public string DueDate { get; set; }
+        public double Amount { get; set; }
+        public DateTime DueDate { get; set; }
         public string PaymentMethod { get; set; }
         public string Company { get; set; }
     }

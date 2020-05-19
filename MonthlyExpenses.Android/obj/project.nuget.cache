@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CjuRfOncY6p8vn0qQUvSgTb0eO2ABRQwE1Kmy+koV24s5/G2VE8+LHmZNApPizY4q8ewEX/wd3TXTar8ClWoCQ==",
+  "dgSpecHash": "6wFtJDhER/1hEHnKxu/s3UKjVlUEWJ6L4r9ilb21q0nReC4k7OSLBEnjWI9BnDDzHd4SNxu4YUvNHkFHPaluKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\CCUK\\Desktop\\Xamarin projects\\MonthlyExpenses\\MonthlyExpenses.Android\\MonthlyExpenses.Android.csproj",
   "expectedPackageFiles": [
@@ -48,18 +48,7 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+    "C:\\Users\\CCUK\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.6.0.726 to 4.4.0.991265. Reference the package directly from the project to select a different version. \r\n MonthlyExpenses.Android -> MonthlyExpenses -> Xamarin.Forms (>= 4.6.0.726) \r\n MonthlyExpenses.Android -> Xamarin.Forms (>= 4.4.0.991265)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

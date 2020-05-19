@@ -1,4 +1,5 @@
 ﻿using MonthlyExpenses.Model;
+using MonthlyExpenses.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,9 @@ namespace MonthlyExpenses.View
     {
         public NewExpensePage()
         {
+            NewExpensePageViewModel newExpensePage = new NewExpensePageViewModel();
             InitializeComponent();
+            BindingContext = newExpensePage;
         }
 
         private void cancelbtn_Clicked(object sender, EventArgs e)
@@ -35,11 +38,11 @@ namespace MonthlyExpenses.View
 
                 Expense exp = new Expense();
                 exp.Name = ExpenseName.Text;
-                exp.Amount = Amount.Text;
-                exp.DueDate = DueDate.Date.ToString();
+                exp.Amount = Double.Parse(Amount.Text);
+                exp.DueDate = DueDate.Date;
                 exp.PaymentMethod = PaymentMethod.Text;
                 exp.Company = Company.Text;
-                int rows = 0;
+                int rows = 0;  
                 try
                 {
                     rows = conn.Insert(exp);
