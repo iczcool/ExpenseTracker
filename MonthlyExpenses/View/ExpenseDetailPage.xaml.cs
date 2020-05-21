@@ -15,12 +15,14 @@ namespace MonthlyExpenses.View
     public partial class ExpenseDetailPage : ContentPage
     {
         int _id;
+        private Expense myexp;
+        private SQLiteConnection conn;
         public ExpenseDetailPage(int id)
         {
             _id = id;
             InitializeComponent();
 
-            SQLiteConnection conn = new SQLiteConnection(App.DbLocation);
+            conn = new SQLiteConnection(App.DbLocation);
             conn.CreateTable<Expense>();
             var expenses = conn.Table<Expense>().ToList();
             conn.Close();
@@ -29,7 +31,7 @@ namespace MonthlyExpenses.View
                        where e.Id == _id
                        select e).FirstOrDefault();
 
-            Expense myexp = new Expense();
+            myexp = new Expense();
             myexp.Name = exp.Name;
             myexp.Amount = exp.Amount;
             myexp.DueDate = exp.DueDate;
@@ -45,12 +47,16 @@ namespace MonthlyExpenses.View
 
         private void edit_Clicked(object sender, EventArgs e)
         {
-           
+            Navigation.PushAsync(new EditExpensePage(_id));
         }
 
         private void delete_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("ID", _id.ToString(), "Ok");
+            conn = new SQLiteConnection(App.DbLocation);
+            conn.CreateTable<Expense>();
+            conn.Table<Expense>().Delete(myexp => myexp.Id == _id);
+            conn.Close();
+            Navigation.PushAsync(new HomePage());
         }
     }
 }

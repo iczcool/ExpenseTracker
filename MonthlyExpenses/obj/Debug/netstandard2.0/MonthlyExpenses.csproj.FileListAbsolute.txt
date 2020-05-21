@@ -15,3 +15,4 @@ C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\MonthlyExpenses.csproj.CoreCompileInputs.cache
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\View\ExpenseDetailPage.xaml.g.cs
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses\obj\Debug\netstandard2.0\View\EditExpensePage.xaml.g.cs

@@ -16,8 +16,8 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Amount:  " FontAttributes="Bold"/>
-                                <Span x:Name="amount" Text="--"/>
+                                <Span Text="Amount:  " FontAttributes="Bold" FontSize="16"/>
+                                <Span x:Name="amount" Text="--" FontSize="16"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
@@ -26,8 +26,8 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Due Date:  " FontAttributes="Bold"/>
-                                <Span x:Name="duedate" Text="--"/>
+                                <Span Text="Due Date:  " FontAttributes="Bold" FontSize="16"/>
+                                <Span x:Name="duedate" Text="--" FontSize="16"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
@@ -36,8 +36,8 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Reciever:  " FontAttributes="Bold"/>
-                                <Span x:Name="company" Text="--"/>
+                                <Span Text="Reciever:  " FontAttributes="Bold" FontSize="16"/>
+                                <Span x:Name="company" Text="--" FontSize="16"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
@@ -46,8 +46,8 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Payment Method:  " FontAttributes="Bold"/>
-                                <Span x:Name="paymethod" Text="--"/>
+                                <Span Text="Payment Method:  " FontAttributes="Bold" FontSize="16"/>
+                                <Span x:Name="paymethod" Text="--" FontSize="16"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
