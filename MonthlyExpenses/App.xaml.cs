@@ -12,12 +12,12 @@ namespace MonthlyExpenses
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new Dashboard());
         }
         public App(string dbLocation)
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new Dashboard());
             DbLocation = dbLocation;
         }
 

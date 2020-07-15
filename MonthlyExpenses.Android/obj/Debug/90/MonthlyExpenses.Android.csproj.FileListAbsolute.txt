@@ -498,3 +498,9 @@ C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\o
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\NongreedySnapHelper_InitialScrollListener.java
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\RadioButtonRenderer.java
 C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ViewCellRenderer_ViewCellContainer_TapGestureListener.java
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\res\drawable\cash.png
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\res\drawable\wallet.png
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\res\drawable\purse.png
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\res\drawable\piggybank.png
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\res\drawable\save.png
+C:\Users\CCUK\Desktop\Xamarin projects\MonthlyExpenses\MonthlyExpenses.Android\obj\Debug\90\res\drawable\property.png

@@ -3,5 +3,6 @@
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
     <SelectedDevice>Samsung SM-G950F</SelectedDevice>
+    <DefaultDevice>pixel_2_pie_9_0_-_api_28</DefaultDevice>
   </PropertyGroup>
 </Project>

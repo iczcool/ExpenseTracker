@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MonthlyExpenses.View.NewVEPage"
+             Title="New Variable Expense"
+             NavigationPage.BackButtonTitle="Variable Expenses">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="40">
+            <Label Text="Add New Variable Expense" Margin="0,0,0,40" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="ExpenseName" Placeholder="Expense Name" />
+            <Entry x:Name="Amount" Placeholder="Amount"/>
+            <Label Text="Due Date" Margin="0,20,0,0"/>
+            <DatePicker x:Name="DueDate" Format="dd/MM/yyyy"/>
+            <Entry x:Name="Description" Placeholder="Brief Description" />
+
+            <Grid>
+                <Button Grid.Column="0" x:Name="addbtn" Text="Save" BackgroundColor="#088da5" Clicked="addbtn_Clicked" Margin="0,20,0,0"/>
+                <Button Grid.Column="1" x:Name="cancelbtn" Text="Cancel" BackgroundColor="#088da5" Clicked="cancelbtn_Clicked" Margin="0,20,0,0"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

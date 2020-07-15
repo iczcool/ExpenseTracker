@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MonthlyExpenses.View.Dashboard">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="20">
+            <Grid Margin="0,0,0,60" Padding="20" BackgroundColor="#0074D9" VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Grid>
+                        <Label x:Name="currentDate" Grid.Row="0" Text="" TextColor="#ffffff" FontSize="30" FontAttributes="Bold" TextDecorations="Underline" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                    </Grid>
+                    <Grid HorizontalOptions="Center">
+                        <Label Grid.Row="0" Text="Your Income " TextColor="#ffffff" FontSize="20" HorizontalOptions="Center"/>
+                        <Label x:Name="income" Grid.Row="1" Text="" TextColor="#ffffff" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+                        <Label Grid.Row="0" Text="Your Expenditure" TextColor="#ffffff" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
+                        <Label Grid.Row="1" x:Name="expenseTotal" Text="" TextColor="#ffffff" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+            
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Variable Expenses" Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Center" FontSize="20" TextColor="#cccccc"/>
+                <Image x:Name="variable" Grid.Column="1" Grid.Row="0" Source="purse.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="LimeGreen" HeightRequest="80" Margin="0,0,0,20"/>
+                <Label x:Name="variableAmount" Text="" Grid.Column="2" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontAttributes="Bold" TextColor="LimeGreen"/>
+
+                <Label Text="Constant Expenses" Grid.Column="0" Grid.Row="1" VerticalTextAlignment="Center" FontSize="20" TextColor="#cccccc"/>
+                <Image x:Name="constant" Grid.Column="1" Grid.Row="1" Source="property.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Orange" HeightRequest="80" Margin="0,0,0,10"/>
+                <Label x:Name="constantAmount" Text="" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontAttributes="Bold" TextColor="Orange"/>
+
+                <Label Text="Savings" Grid.Column="0" Grid.Row="2" VerticalTextAlignment="Center" FontSize="20" TextColor="#cccccc"/>
+                <Image x:Name="savings" Grid.Column="1" Grid.Row="2" Source="piggybank.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="DeepSkyBlue" HeightRequest="80"/>
+                <Label x:Name="savingsAmount" Text="" Grid.Column="2" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontAttributes="Bold" TextColor="DeepSkyBlue"/>
+
+                <Button x:Name="transport" 
+                    Text="&#xf11a;" 
+                    Grid.Row="0" 
+                    Grid.Column="0"
+                    BackgroundColor="DarkRed"
+                    TextColor="#ffffff"
+                    FontSize="20">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeFreeRegular400.otf#Font Awesome 5 Free Regular"/>
+                    </Button.FontFamily>
+                </Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
